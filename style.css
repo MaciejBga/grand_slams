@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    position: absolute;
+    /* flex-wrap: wrap; */
+    width: 100vw;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.logo {
+    position: fixed;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo.australian {
+    top: 5%;
+    left: 5%;
+}
+
+.logo.wimbledon {
+    bottom: 5%;
+    left: 5%;
+}
+
+.logo.french {
+    top: 5%;
+    right: 5%;
+}
+
+.logo.us {
+    bottom: 5%;
+    right: 5%;
+}
+
+.australian {
+    background-image: url(/img/AO.png);
+    background-size: contain;
+}
+
+.wimbledon {
+    background-image: url(/img/W.png);
+    background-size: contain;
+}
+
+.french {
+    background-image: url(/img/RG.png);
+    background-size: contain;
+}
+
+.us {
+    background-image: url(/img/USO.jpg);
+    background-size: contain;
+}
+
+main {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    position: relative;
+    height: 80%;
+    top: 10%;
+    background-image: url(/img/ball2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+
+article {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    transition: .5s;
+    opacity: 0;
+}
+
+.first-slam,
+.third-slam {
+    border-left: 5px dotted cadetblue;
+}
+
+.second-slam,
+.fourth-slam {
+    border-right: 5px dotted cadetblue;
+}
+
+
+
+.info,
+.funfacts,
+.trophy,
+.court {
+    flex-basis: 50%;
+    height: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.info,
+.funfacts {
+    padding: 15px;
+}
+
+.info h1,
+.funfacts h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.info p,
+.funfacts li {
+    list-style-type: none;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 5px;
+}
+
+.funfacts li::first-letter {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.court p,
+.trophy p {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.first-slam .court {
+    background-image: url(/img/AO_court.jpg);
+}
+
+.first-slam .trophy {
+    background-image: url(/img/ao_trophies.jpg);
+}
+
+.second-slam .court {
+    background-image: url(/img/wimbledon_court.jpg);
+}
+
+.second-slam .trophy {
+    background-image: url(/img/fo_trophies.jpg);
+}
+
+.third-slam .court {
+    background-image: url(/img/FO_court.jpg)
+}
+
+.third-slam .trophy {
+    background-image: url(/img/wimbledon_trophies.jpg)
+}
+
+.fourth-slam .court {
+    background-image: url(/img/US_court.jpg);
+}
+
+.fourth-slam .trophy {
+    background-image: url(/img/us_trophies.jpg)
+}
+
+
+.logo.australian:hover~main>header,
+.logo.wimbledon:hover~main>header,
+.logo.french:hover~main>header,
+.logo.us:hover~main>header {
+    opacity: 0;
+}
+
+.logo.australian:hover~main .first-slam,
+.logo.french:hover~main .second-slam,
+.logo.wimbledon:hover~main .third-slam,
+.logo.us:hover~main .fourth-slam {
+    opacity: 1;
+}
