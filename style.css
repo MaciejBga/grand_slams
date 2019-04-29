@@ -41,22 +41,22 @@
 }
 
 .australian {
-    background-image: url(/img/AO.png);
+    background-image: url(img/AO.png);
     background-size: contain;
 }
 
 .wimbledon {
-    background-image: url(/img/W.png);
+    background-image: url(img/W.png);
     background-size: contain;
 }
 
 .french {
-    background-image: url(/img/RG.png);
+    background-image: url(img/RG.png);
     background-size: contain;
 }
 
 .us {
-    background-image: url(/img/USO.jpg);
+    background-image: url(img/USO.jpg);
     background-size: contain;
 }
 
@@ -72,7 +72,7 @@ header {
     position: relative;
     height: 80%;
     top: 10%;
-    background-image: url(/img/ball2.png);
+    background-image: url(img/ball2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,35 +161,35 @@ article {
 }
 
 .first-slam .court {
-    background-image: url(/img/AO_court.jpg);
+    background-image: url(img/AO_court.jpg);
 }
 
 .first-slam .trophy {
-    background-image: url(/img/ao_trophies.jpg);
+    background-image: url(img/ao_trophies.jpg);
 }
 
 .second-slam .court {
-    background-image: url(/img/wimbledon_court.jpg);
+    background-image: url(img/wimbledon_court.jpg);
 }
 
 .second-slam .trophy {
-    background-image: url(/img/fo_trophies.jpg);
+    background-image: url(img/fo_trophies.jpg);
 }
 
 .third-slam .court {
-    background-image: url(/img/FO_court.jpg)
+    background-image: url(img/FO_court.jpg)
 }
 
 .third-slam .trophy {
-    background-image: url(/img/wimbledon_trophies.jpg)
+    background-image: url(img/wimbledon_trophies.jpg)
 }
 
 .fourth-slam .court {
-    background-image: url(/img/US_court.jpg);
+    background-image: url(img/US_court.jpg);
 }
 
 .fourth-slam .trophy {
-    background-image: url(/img/us_trophies.jpg)
+    background-image: url(img/us_trophies.jpg)
 }
 
 
